@@ -6,10 +6,12 @@
 
 
 $color-primary: rgb(9, 40, 62); // main< dark color
-$color-primary-border: rgba(9,40,62,.3); //muted for borders
-
-$spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.25, 3.5, 3.75, 4);
-$spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "3", "325", "35", "375" , "4"); // Adjust this to include the pixel amounts you need.
+$color-primary-light: rgba(9,40,62,.3); //light for borders
+$color-primary-lighter: rgb(7, 39, 61);
+$color-secondary: rgb(79,227,194); // secondary for links etc
+$color-secondary-light: rgba(79,227,194, .3); // secondary light for links etc
+$spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4);
+$spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "275", "3", "325", "35", "375" , "4"); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
 
@@ -70,7 +72,9 @@ ol {
 	padding: 0;
 	list-style-type: none;
 }
-
+.fw-b {
+	font-weight: bold;
+}
 .width-full {
 	width: 100%;
 }
@@ -100,6 +104,10 @@ ol {
 	width: 70%;
 }
 
+.width-75 {
+	width: 75%;
+}
+
 .width-auto {
 	width: auto;
 }
@@ -110,7 +118,8 @@ ol {
 
 header,
 .header-nav__inner,
-main {
+main,
+footer {
 	max-width: 75%;
 	margin: 0 auto;
 }
@@ -150,9 +159,11 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
 .event-title-location {
 	font-weight: normal;
 }
+
 .main__article-header {
 	// padding: 0 0 3em 0;
 }
@@ -166,20 +177,28 @@ main {
 }
 
 .info-box-border {
-	border: solid 1px $color-primary-border;
+	border: solid 1px $color-primary-light;
 	// padding: 0.5em;
 }
 
 .info-box-item {
 	// width: 100%;
 	// text-align: center;
-	border-bottom: 1px solid $color-primary-border;
+	border-bottom: 1px solid $color-primary-light;
 }
 
 .info-box-item-last {
 	border-bottom: 1px solid #fff;
 }
 
+.info-box-item-link {
+	text-decoration: none;
+	color: $color-primary-lighter;
+}
+
+.info-box-item-link:hover {
+	background-color: $color-secondary-light;
+}
 .main__section-description {
 	justify-self: right;
 	// padding: 0.9em;
@@ -202,8 +221,26 @@ main {
 
 .gallery {
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .gallery > img {
 	flex-basis: 30%;
+	margin-bottom: 3em;
+}
+
+/*Footer*/
+
+footer {
+	justify-content: space-around;
+	flex-direction: row;
+	flex-basis: calc(100% / 6);
+}
+.footer-section {
+	flex-direction: column;
+}
+
+.footer-additional {
+	background-color: $color-primary;
+	color: #fff;
 }
