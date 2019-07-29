@@ -1,0 +1,15 @@
+{
+  "name": "volunteer-web-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/ --output /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
