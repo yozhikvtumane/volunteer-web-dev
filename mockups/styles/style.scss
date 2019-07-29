@@ -12,6 +12,45 @@ body {
 	padding: 0;
 }
 
+
+$spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.25);
+$spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "3", "325"); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right, ""); // Leave this variable alone
+
+@for $i from 1 through length($spaceamountsnames) {
+	@each $side in $sides {
+		@if $side == "" {
+			.p-#{nth($spaceamountsnames, $i)} {
+				padding: #{nth($spaceamounts, $i)}em !important; 
+			}
+
+			.m-#{nth($spaceamountsnames, $i)} {
+				margin: #{nth($spaceamounts, $i)}em !important; 
+			}
+		} @else {
+			
+			.p-#{str-slice($side, 0, 1)}-#{nth($spaceamountsnames, $i)} {
+				padding-#{$side}: #{nth($spaceamounts, $i)}em !important; 
+			}
+
+			.m-#{str-slice($side, 0, 1)}-#{nth($spaceamountsnames, $i)} {
+				margin-#{$side}: #{nth($spaceamounts, $i)}em !important; 
+			}
+				
+		}
+	}
+	
+	.fz-#{nth($spaceamountsnames, $i)} {
+		font-size:  #{nth($spaceamounts, $i)}rem !important;
+	}
+}
+
+
+@for $i from 1 through 5 {
+
+}
+
+
 img {
 	max-width: 100%;
 }
