@@ -42,6 +42,9 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 	}
 }
 
+.m-auto {
+	margin: 0 auto;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;

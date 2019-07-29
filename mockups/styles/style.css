@@ -563,6 +563,9 @@
 .fz-4 {
   font-size: 4rem !important; }
 
+.m-auto {
+  margin: 0 auto; }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
