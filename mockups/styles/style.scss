@@ -5,12 +5,15 @@
 }
 
 
-$color-primary: rgba(9, 40, 62, .3);
+$color-primary: rgb(9, 40, 62); // main< dark color
+$color-primary-border: rgba(9,40,62,.3); //muted for borders
 
 $spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 3, 3.25, 3.5, 3.75, 4);
 $spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "3", "325", "35", "375" , "4"); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
+
+//Adding margin, paddings, font-size helpers
 @for $i from 1 through length($spaceamountsnames) {
 	@each $side in $sides {
 		@if $side == "" {
@@ -160,14 +163,14 @@ main {
 }
 
 .info-box-border {
-	border: solid 1px $color-primary;
+	border: solid 1px $color-primary-border;
 	// padding: 0.5em;
 }
 
 .info-box-item {
 	// width: 100%;
 	// text-align: center;
-	border-bottom: 1px solid $color-primary;
+	border-bottom: 1px solid $color-primary-border;
 }
 
 .info-box-item-last {
@@ -186,7 +189,7 @@ main {
 	font-weight: 700;
 	text-align: center;
 	// padding: 0.6em;
-	border: 2px solid #07273d;
+	border: 2px solid $color-primary;
 }
 
 .switcher-active {
