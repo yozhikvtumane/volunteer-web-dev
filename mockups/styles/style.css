@@ -625,6 +625,9 @@ ol {
 .fw-b {
   font-weight: bold; }
 
+.fw-n {
+  font-weight: normal; }
+
 .width-full {
   width: 100%; }
 

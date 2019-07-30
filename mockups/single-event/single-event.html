@@ -25,7 +25,7 @@
 	  <nav class="header-nav p-t-1 p-b-1">
 		<div class="header-nav__inner">
 			<div class="header-nav-item1">
-			<h2 clas="fz-125">Single Event</h2>
+			<h2 clas="fz-125">📅Single Event</h2>
 			</div>		  
 		</div>
 	</nav>
@@ -94,7 +94,7 @@
 			</div>
 		</section>
 		<section class="footer-section flex">
-			<h4 class="m-b-15">Lorem Section kiekaiwgo</h4>
+			<h4 class="m-b-15 fz-115 fw-n">Lorem Section kiekaiwgo</h4>
 			<span class="width-full">Lorem Footer fasucid</span>
 			<span class="width-full">Lorem Footer zanuti</span>
 			<span class="width-full">Lorem Footer zucoc</span>
@@ -104,7 +104,7 @@
 			<span class="width-full">Lorem Footer s</span>
 		</section>
 		<section class="footer-section flex">
-			<h4 class="m-b-15">Lorem Section ferreumuh</h4>
+			<h4 class="m-b-15 fz-115 fw-n">Lorem Section ferreumuh</h4>
 			<span class="width-full">Lorem Footer fasucid</span>
 			<span class="width-full">Lorem Footer zanuti</span>
 			<span class="width-full">Lorem Footer zucoc</span>
@@ -114,7 +114,7 @@
 			<span class="width-full">Lorem Footer s</span>
 		</section>
 		<section class="footer-section flex">
-			<h4 class="m-b-15">Lorem Section asehurapn</h4>
+			<h4 class="m-b-15 fz-115 fw-n">Lorem Section asehurapn</h4>
 			<span class="width-full">Lorem Footer fasucid</span>
 			<span class="width-full">Lorem Footer zanuti</span>
 			<span class="width-full">Lorem Footer zucoc</span>
@@ -124,7 +124,7 @@
 			<span class="width-full">Lorem Footer s</span>
 		</section>
 		<section class="footer-section flex">
-			<h4 class="m-b-15">Lorem Section vurdewihe</h4>
+			<h4 class="m-b-15 fz-115 fw-n">Lorem Section vurdewihe</h4>
 			<span class="width-full">Lorem Footer fasucid</span>
 			<span class="width-full">Lorem Footer zanuti</span>
 			<span class="width-full">Lorem Footer zucoc</span>
@@ -134,7 +134,7 @@
 			<span class="width-full">Lorem Footer s</span>
 		</section>
 		<section class="footer-section flex">
-			<h4 class="m-b-15">Lorem Section ataegbuwo</h4>
+			<h4 class="m-b-15 fz-115 fw-n">Lorem Section ataegbuwo</h4>
 			<span class="width-full">Lorem Footer fasucid</span>
 			<span class="width-full">Lorem Footer zanuti</span>
 			<span class="width-full">Lorem Footer zucoc</span>
@@ -149,5 +149,26 @@
 			<span class="fz-15">✌</span><span class="fw-b">Wuzucrijaccu</span>
 		</article>
 	</section>
+	<script>
+		//format Prague, Czech Republic, 28.07.2019 19:00
+		const locDateHeader = document.querySelector('.event-title-location')
+		
+		const locations = ["Hocejrez, Canada, 01.01.1980 10:25",
+			"Otinonoh, Honduras, 01.01.1980 10:25",
+			"Cihuthis, Malaysi, 01.01.1980 10:25",
+			"Dauhmi, Algeri, 01.01.1980 10:25",
+			"Didudaj, Grenad, 01.01.1980 10:25",
+			"Fuwlasfi, Curaçao, 01.01.1980 10:25",
+			"Wovawi, Ghana, 01.01.1980 10:25",
+			"Prague, Czech Republic, 01.01.1980 10:25",
+			"Iwodebmap, Gambia, 01.01.1980 10:25",
+			"Getetle, Jersey, 01.01.1980 10:25",
+			"Sogpodrim, Germany, 01.01.1980 10:25",
+			"Wureku, Sudan, 01.01.1980 10:25",
+		]
+		
+		locDateHeader.textContent = locations[Math.floor(Math.random() * locations.length - 1) + 1]
+		locDateHeader.innerText = locations[Math.floor(Math.random() * locations.length - 1) + 1]
+	</script>
 </body>
 </html>
