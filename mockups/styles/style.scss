@@ -88,8 +88,19 @@ ol {
 	width: 100%;
 }
 
+.width-5 {
+	width: 5%;;
+}
+
+
+.width-6 {
+	width: 6%;;
+}
 .width-20 {
 	width: 20%;
+}
+.width-075 {
+	width: 7.5%;
 }
 
 .width-25 {
@@ -306,6 +317,8 @@ footer input[type="email"] {
 }
 .participants-item {
 	border-bottom: 1px solid $color-primary-light;
+	
+	align-items: center;
 	
 }
 
