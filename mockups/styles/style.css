@@ -751,6 +751,9 @@ footer {
 .footer-section {
   flex-direction: column; }
 
+.footer-section > span {
+  color: rgba(9, 40, 62, 0.7); }
+
 .footer-additional {
   background-color: #09283e;
   color: #fff; }

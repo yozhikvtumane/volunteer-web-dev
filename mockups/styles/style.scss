@@ -6,6 +6,7 @@
 
 
 $color-primary: rgb(9, 40, 62); // main< dark color
+$color-primary-medium: rgba(9, 40, 62, .7); // main< dark color
 $color-primary-light: rgba(9,40,62,.3); //light for borders
 $color-primary-lighter: rgb(7, 39, 61);
 $color-secondary: rgb(79,227,194); // secondary for links etc
@@ -242,6 +243,10 @@ footer {
 }
 .footer-section {
 	flex-direction: column;
+}
+
+.footer-section > span {
+	color: $color-primary-medium;
 }
 
 .footer-additional {
