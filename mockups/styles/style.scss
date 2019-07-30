@@ -299,3 +299,17 @@ footer input[type="email"] {
 .flex-ai-c {
 	align-items: center;
 }
+
+
+.main__section-participants {
+	flex-direction: column;
+}
+.participants-item {
+	border-bottom: 1px solid $color-primary-light;
+	
+}
+
+
+.participants-item:last-child {
+	border-bottom: 1px solid #fff;
+}
