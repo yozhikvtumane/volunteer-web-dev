@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,700i,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 
 * {
 	box-sizing: border-box;
@@ -48,6 +50,7 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 .m-auto {
 	margin: 0 auto;
 }
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
@@ -253,3 +256,13 @@ footer {
 	background-color: $color-primary;
 	color: #fff;
 }
+
+.fa {
+	text-decoration: none;
+	color: $color-primary;
+  }
+  
+  .fa:hover {
+	  color: $color-primary-light;
+	  cursor: pointer;
+  }

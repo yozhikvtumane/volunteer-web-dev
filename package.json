@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/ --output /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/"
+    "scss": "node-sass --watch /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/ --output /mnt/c/xampp/htdocs/volunteer-web-dev/mockups/styles/ --output-style compressed"
   },
   "author": "",
   "license": "ISC",
