@@ -719,7 +719,8 @@ main {
   background-color: rgba(79, 227, 194, 0.3); }
 
 .main__section-description {
-  justify-self: right; }
+  justify-self: right;
+  border-bottom: 1px solid rgba(9, 40, 62, 0.3); }
 
 .switcher-left,
 .switcher-right {
