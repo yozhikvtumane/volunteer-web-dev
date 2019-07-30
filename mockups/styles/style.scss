@@ -13,8 +13,10 @@ $color-primary-light: rgba(9,40,62,.3); //light for borders
 $color-primary-lighter: rgb(7, 39, 61);
 $color-secondary: rgb(79,227,194); // secondary for links etc
 $color-secondary-light: rgba(79,227,194, .3); // secondary light for links etc
-$spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4);
-$spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "275", "3", "325", "35", "375" , "4"); // Adjust this to include the pixel amounts you need.
+$color-white-medium: rgba(255,255,255, .7);
+
+$spaceamounts: (0, 0.25, 0.5, 0.75, 1, 1.15, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75, 4, 4.5, 5, 5.5);
+$spaceamountsnames: ("none", "025", "05", "075", "1", "115", "125", "15", "175", "2", "225", "25", "275", "3", "325", "35", "375" , "4", "45" , "5" , "55"); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
 
@@ -106,6 +108,11 @@ ol {
 .width-30 {
 	width: 30%;
 }
+
+.width-40 {
+	width: 40%;
+}
+
 
 .width-70 {
 	width: 70%;
@@ -253,16 +260,42 @@ footer {
 }
 
 .footer-additional {
-	background-color: $color-primary;
-	color: #fff;
+	background-color: #000;
+	color: $color-white-medium;
 }
 
 .fa {
 	text-decoration: none;
 	color: $color-primary;
   }
-  
-  .fa:hover {
-	  color: $color-primary-light;
-	  cursor: pointer;
-  }
+
+.fa:hover {
+	color: $color-primary-light;
+	cursor: pointer;
+}
+
+/*additional helper classes
+
+flex-v-align-c
+flex-align-items-c
+*/
+.footer-additional-text {
+	text-align: right;
+}
+
+footer input{
+	height: 35px;
+	border-top: 2px solid $color-primary;
+	border-left: 2px solid $color-primary;
+	border-right: 2px solid $color-primary;
+	border-bottom: 2px solid $color-primary;
+	background-color: #fff;
+	padding: 0.1em 0.5em;
+}
+footer input[type="email"] {
+	border-right: none;
+}
+
+.flex-ai-c {
+	align-items: center;
+}
