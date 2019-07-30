@@ -78,8 +78,10 @@
 			<h3 class="fz-225">Single Event Description</h3>
 			<p class="fz-15 m-b-25">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, maiores incidunt nemo perspiciatis dolores impedit earum, cum rerum corrupti possimus fugiat ducimus dolore, accusantium perferendis at debitis? Ipsam, molestiae omnis!</p>
 			<div class="switcher switcher-buttons flex width-full m-b-25">
-				<div data-contentSwitcher="panel1" class="switcher-button switcher-left p-075 p-l-025 p-r-025">Participants</div>
-				<div data-contentSwitcher="panel2" class="switcher-button switcher-right p-075 p-l-025 p-r-025 switcher-active">Gallery</div>
+				<div data-contentSwitcher="panel1" class="switcher-button switcher-left p-075 p-l-025 p-r-025 switcher-active">Participants</div>
+				<div data-contentSwitcher="panel2" class="switcher-button switcher-right p-075 p-l-025 p-r-025">Gallery 1</div>
+				<div data-contentSwitcher="panel3" class="switcher-button switcher-right p-075 p-l-025 p-r-025">Gallery 2</div>
+				<div data-contentSwitcher="panel4" class="switcher-button switcher-right p-075 p-l-025 p-r-025">Gallery 3</div>
 			</div>
 			<section data-contentSwitcher="panel1" class="switcher-panel main__section-participants flex width-full">
 					<article class="participants-item width-full p-t-15 p-b-15 flex">
@@ -158,7 +160,30 @@
 						<span class="width-30 fz-1">Joined: 29.8.2002</span>
 					</article>
 			</section>
-			<div data-contentSwitcher="panel2" class="switcher-panel gallery width-full flex">
+			<!-- div.switcher-panel.switcher-panel-hidden.gallery.width-full.flex[data-contentSwitcher="panel$"]*3>img[src="https://picsum.photos/id/292/200/200" alt="Image-id$$"]*9 -->
+			<div data-contentSwitcher="panel2" class="switcher-panel switcher-panel-hidden gallery width-full flex">
+				<img src="https://picsum.photos/id/292/200/200" alt="">
+				<img src="https://picsum.photos/id/65/200/200" alt="">
+				<img src="https://picsum.photos/id/39/200/200" alt="">
+				<img src="https://picsum.photos/id/273/200/200" alt="">
+				<img src="https://picsum.photos/id/8/200/200" alt="">
+				<img src="https://picsum.photos/id/73/200/200" alt="">
+				<img src="https://picsum.photos/id/256/200/200" alt="">
+				<img src="https://picsum.photos/id/46/200/200" alt="">
+				<img src="https://picsum.photos/id/250/200/200" alt="">
+			</div>
+			<div data-contentSwitcher="panel3" class="switcher-panel switcher-panel-hidden gallery width-full flex">
+				<img src="https://picsum.photos/id/292/200/200" alt="">
+				<img src="https://picsum.photos/id/65/200/200" alt="">
+				<img src="https://picsum.photos/id/39/200/200" alt="">
+				<img src="https://picsum.photos/id/273/200/200" alt="">
+				<img src="https://picsum.photos/id/8/200/200" alt="">
+				<img src="https://picsum.photos/id/73/200/200" alt="">
+				<img src="https://picsum.photos/id/256/200/200" alt="">
+				<img src="https://picsum.photos/id/46/200/200" alt="">
+				<img src="https://picsum.photos/id/250/200/200" alt="">
+			</div>
+			<div data-contentSwitcher="panel4" class="switcher-panel switcher-panel-hidden gallery width-full flex">
 				<img src="https://picsum.photos/id/292/200/200" alt="">
 				<img src="https://picsum.photos/id/65/200/200" alt="">
 				<img src="https://picsum.photos/id/39/200/200" alt="">
@@ -263,9 +288,23 @@
 				button.classList.remove('switcher-active')
 				
 			})
-			
-			
 			this.classList.add('switcher-active')
+			
+			let relatedPanel = this.dataset.contentswitcher
+			
+			switcherPanelsArr.map(panel => { 
+				
+				return relatedPanel === panel.dataset.contentswitcher ? panel.style.display = "flex" : panel.style.display = "none"
+				
+				// if (relatedPanel === panel.dataset.contentswitcher) {
+				// 	panel.style.display = "flex"
+				// } else {
+				// 	panel.style.display = "none"
+				// }
+				
+				
+			})
+			
 		}
 		
 		switcherButtonsArr.map(switcher => {

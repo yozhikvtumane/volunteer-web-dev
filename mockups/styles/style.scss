@@ -229,7 +229,12 @@ main {
 	border-bottom: 1px solid $color-primary-light;
 	// padding: 0.9em;
 }
-
+.switcher-button {
+	cursor: pointer;
+}
+.switcher-button::selection {
+	background-color: rgba(0,0,0, 0);
+}
 .switcher-left,
 .switcher-right {
 	background-color: #fff;
@@ -325,4 +330,11 @@ footer input[type="email"] {
 
 .participants-item:last-child {
 	border-bottom: 1px solid #fff;
+}
+
+.switcher-panel {
+	display: flex;
+}
+.switcher-panel-hidden  {
+	display: none;
 }
