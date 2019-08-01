@@ -49,6 +49,19 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 	}
 }
 
+
+@media (max-width: 990px) {
+	main,
+	footer {
+		flex-direction: column !important;
+	}
+	
+	main > *,
+	footer > * {
+		width: 100% !important;
+	}
+}
+
 .m-auto {
 	margin: 0 auto;
 }

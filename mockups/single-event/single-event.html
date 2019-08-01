@@ -46,7 +46,7 @@ Victoria Beck
 			<h1 class="event-title fz-4 m-b-025">Single Event 1</h1>
 			<h3 class="event-title-location fz-2 m-b-225">Prague, Czech Republic, 28.07.2019 19:00</h3>
 		</article>
-		<section class="main__section-info-box width-25 flex ">
+		<section class="main__section-info-box width-25 p-b-3 flex ">
 		  <div class="width-full info-box info-box-border flex p-t-05 p-b-05">
 			<!-- • change spans to something -->
 			<article class="info-box-item width-85 m-auto p-t-15 p-b-15">
@@ -329,7 +329,7 @@ Victoria Beck
 		const galleryImages = document.querySelectorAll('.gallery-image')
 		const galleryImagesArr = Array.from(galleryImages)
 		
-		let imageId = Math.floor(Math.random() * 500) + 1
+		let imageId = Math.floor(Math.random() * 200) + 1 //ids for images src
 		
 		
 		galleryImagesArr.map(image => {
