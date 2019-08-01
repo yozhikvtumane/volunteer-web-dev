@@ -12,5 +12,8 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.11.0"
   }
 }
