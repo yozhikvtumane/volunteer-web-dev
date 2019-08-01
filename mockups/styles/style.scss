@@ -51,6 +51,17 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
 
 @media (max-width: 990px) {
+	body {
+		font-size: 75% !important;
+	}
+	
+	.logo {
+		font-size: 2rem !important;
+		// padding: 0.5em 0;
+		color: #333;
+		font-weight: bold;
+		text-decoration: none;
+	}
 	main,
 	footer {
 		flex-direction: column !important;
@@ -323,6 +334,10 @@ footer input{
 }
 footer input[type="email"] {
 	border-right: none;
+}
+
+.footer-section {
+	margin-bottom: 2.5em;
 }
 
 .flex-ai-c {
