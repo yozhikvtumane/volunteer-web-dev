@@ -52,11 +52,11 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
 @media (max-width: 990px) {
 	body {
-		font-size: 75% !important;
+		font-size: 75%;
 	}
 	
 	.logo {
-		font-size: 2rem !important;
+		font-size: 2em !important;
 		// padding: 0.5em 0;
 		color: #333;
 		font-weight: bold;
@@ -211,10 +211,6 @@ main {
 
 .event-title-location {
 	font-weight: normal;
-}
-
-.main__article-header {
-	// padding: 0 0 3em 0;
 }
 
 .main__section-info-box {
