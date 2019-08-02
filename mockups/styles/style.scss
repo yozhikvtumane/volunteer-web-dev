@@ -51,12 +51,17 @@ $sides: (top, bottom, left, right, ""); // Leave this variable alone
 
 
 @media (max-width: 990px) {
-	body {
-		font-size: 75%;
-	}
+	// body {
+	// 	font-size: 75%;
+	// }
 	
+	// any class with fz in it font-size: 0.75rem;
+	
+	.event-title {
+		font-size: 1rem !important;
+	}
 	.logo {
-		font-size: 2em !important;
+		font-size: 1.25rem !important;
 		// padding: 0.5em 0;
 		color: #333;
 		font-weight: bold;
